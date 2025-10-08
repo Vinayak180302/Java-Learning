@@ -4,6 +4,7 @@ package Abstraction;
 /*
  * functional interface-
  * interface having only 1 abstract method called functional interface
+ * contain static and default method as many as u want, compulsion was only on abstract method
  * 
  * 
  * */
@@ -17,6 +18,7 @@ public class F_interface {
 		};
 		
 		i.show1(1);
+		
 	
 	}
 	
@@ -29,6 +31,14 @@ public class F_interface {
 @FunctionalInterface
 interface I_1{
 	
-	public void show1(int a);
+	public void show1(int a);    //abstract method
+	
+	
+	public static void demo3() {    //static method
 
+     }
+	
+	default public void demo5() {     //default method
+		
+	}
 }
