@@ -27,9 +27,9 @@ interface I_sport {
 
 class Cricket implements I_sport{
 	
-//	public static void info() {           //method hiding not overriding       
-//		System.out.println("info in Cricket");
-//	}
+	public static void info() {           //method hiding not overriding       
+		System.out.println("info in Cricket");
+	}
 	
 	
 }
