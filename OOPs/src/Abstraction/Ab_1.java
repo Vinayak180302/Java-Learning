@@ -5,7 +5,7 @@ package Abstraction;
  * 2. Interface (100% abstraction)
  * 
  * 
- * 1.
+ * 1st way
  * 
 */
 

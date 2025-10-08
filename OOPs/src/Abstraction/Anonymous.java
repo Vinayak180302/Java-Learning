@@ -4,6 +4,8 @@ package Abstraction;
 /* Anonymous class - class without name
  * No need to take separate concrete class to override abstract method
  * Need to use polymorphic obj. with anony. class
+ * 
+ * 3rd way
  * */
 public class Anonymous {
 

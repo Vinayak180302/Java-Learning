@@ -1,9 +1,11 @@
 package Abstraction;
 
-/** 2. Interface (100% abstraction) 
+/** 2. Interface (100% abstraction before java 8) 
  * in interface, access modifier by default value is *public
  * There is no constructor in interface means - no obj.is create of interface
+ *  
  *    
+ *    2nd way
  **/
 public class Interface {
 
