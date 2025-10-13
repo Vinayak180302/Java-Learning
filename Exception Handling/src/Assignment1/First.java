@@ -1,5 +1,9 @@
 package Assignment1;
 
+/*
+ * 	Handling Unchecked Exception (Runtime) - 
+ */
+
 public class First {
 
 	public static void main(String[] args) {

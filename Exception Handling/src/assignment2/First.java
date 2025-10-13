@@ -6,7 +6,7 @@ public class First {
 		try {
 			int age = -10;
 			if(age < 0) {
-				throw new IllegalArgumentException("age cannot be in negative");
+				throw new IllegalArgumentException();
 			}
 		}
 		catch(IllegalArgumentException e) {
