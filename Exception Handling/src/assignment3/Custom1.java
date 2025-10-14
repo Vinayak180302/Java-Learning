@@ -8,8 +8,9 @@ public class Custom1 {
 	   
 	   try {
 	   if(age>18) {
+		   
 		   throw new aboveageException("age is above 20");
-	   }
+	         }
 	   }
 	   catch(aboveageException e) {
 		   System.out.println(e.getMessage());
