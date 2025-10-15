@@ -1,6 +1,6 @@
 package propagationofexception;
 
-public class invalidageException extends RuntimeException {
+public class invalidageException extends Exception {
       public invalidageException() {
     	  super("age is less than 18");
       }
@@ -10,13 +10,13 @@ public class invalidageException extends RuntimeException {
       }
 }
 
-class notIndianException extends RuntimeException{
+class notIndianException extends Exception{
 	public notIndianException() {
 		super("not indian");
 	}
 }
 
-class isIndianException extends RuntimeException{
+class isIndianException extends Exception{
 	public isIndianException() {
 		super("u are not indian");
 	}
