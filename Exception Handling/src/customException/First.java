@@ -7,7 +7,7 @@ public class First {
 		{
 		if(10>5 && 40>30)
 		{
-			throw  new invalidDayException();
+			throw  new invalidDayException("demo 1");
 		}
 		
 		

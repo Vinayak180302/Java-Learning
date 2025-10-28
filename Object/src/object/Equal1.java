@@ -1,8 +1,9 @@
 package object;
 
-public class Equal1 {
+public class Equal1
+{
 
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		
 //Here we override the .equals method and write custom logic to check actual value
 	
@@ -29,8 +30,7 @@ public class Equal1 {
 		c3.price = 1111.00;
 		
 		System.out.println(c1.equals(c3));   // doesn't work give exception
-
-	}
+  }
 
 }
 

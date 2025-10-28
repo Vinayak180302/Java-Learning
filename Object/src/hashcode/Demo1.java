@@ -61,12 +61,13 @@ public int hashCode()
 	
 //return 100+this.id;
 
-return 	Objects.hash(id,name,age);
+return  Objects.hash(id,name,age);
 
 /**
 * Depending upon these values  .hashCode() will generate.
 */
 //integer.
 }
-
 }
+
+

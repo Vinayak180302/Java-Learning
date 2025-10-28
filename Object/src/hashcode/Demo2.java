@@ -31,6 +31,7 @@ public class Demo2 {
 		 * == => memory reference
 		 */
 		System.out.println(str==str2);
+		System.out.println(str.equals(str2));
 
 	}
 	
