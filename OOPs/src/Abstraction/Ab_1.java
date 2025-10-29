@@ -17,6 +17,9 @@ public class Ab_1 {
 		p1.showpincode("412206");
 		
 		p1.show();
+		
+		
+//		City c1 = new City();     //cannot create obj. of abstract class
 
 	}
 
@@ -27,6 +30,7 @@ abstract class City{
 	
 	public City(String name) {
 		this.name = name;
+		System.out.println("parent ctr");
 	}
 
 	public void show() {
