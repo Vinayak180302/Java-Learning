@@ -1,9 +1,13 @@
 package composition;
 
+/*
+ * Aggregation - 
+ * means 1 obj. is not dependent on another obj.
+ * */
 public class Aggregation {
 
 	public static void main(String[] args) {
-		Student s1 = new Student("vinayak");
+		Student s1 = new Student("vinayak");   //here, even teacher obj. is not created still doen't affect student obj.
 		
 		Teacher t1 = new Teacher("sir", s1);
 		
