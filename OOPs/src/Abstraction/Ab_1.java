@@ -39,6 +39,13 @@ abstract class City{
 	
 	abstract public void showpincode(String pin);    //abstract method - decide only behaviour, implemented in child class
 	
+	public static void demo() {
+		
+	}
+	
+//	default public void dmeo1() {     //default method are only allowed in interface
+//		
+//	}
 }
 
 class Pune extends City{

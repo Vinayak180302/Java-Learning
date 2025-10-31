@@ -19,12 +19,19 @@ public class F_interface {
 		
 		i.show1(1);
 		
-	
+		I_2 i2 = (a, b)->{
+			System.out.println(a + b);
+		};
+		
+	   i2.display(10, 20);
 	}
-	
-	
 }
+	
+	
 
+interface I_2{
+	public void display(int a, int b);
+}
 
 
 

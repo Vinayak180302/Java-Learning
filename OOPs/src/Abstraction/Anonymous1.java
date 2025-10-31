@@ -47,6 +47,8 @@ abstract class Demo{
 
 interface I_Demo{
 	
+//	I_Demo(){}                //interface cannot have constructor
+	
 	public void Demo2();
 	
 	public void Demo3(int i, int j);
