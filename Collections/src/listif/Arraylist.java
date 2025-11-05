@@ -27,6 +27,10 @@ public class Arraylist {
 		list.add(null);
 		System.out.println(list);
 		list.set(1, 10);    //set value at given index and remove previous elem.
+
+		System.out.println(list);
+		list.remove(4);   //remove elem. at given index
+		System.out.println(list);
 		
 		System.out.println(list);
 		System.out.println(list.size());
