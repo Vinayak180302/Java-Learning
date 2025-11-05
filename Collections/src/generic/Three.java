@@ -5,11 +5,8 @@ public class Three {
 	public static void main(String[] args) {
 			Iadd1<Integer> i1 = new Addition1();
 			
-			i1.add(10, 20);
-			
-			
-			
-		 
+			i1.add(10, 20);		
+				 
 
 	}
 
