@@ -47,10 +47,8 @@ abstract class City{
 //		
 //	}
 }
+ class Pune extends City{
 
-class Pune extends City{
-
-	
 
 	@Override
 	public void showpincode(String pin) {
