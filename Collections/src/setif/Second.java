@@ -6,7 +6,7 @@ import java.util.Set;
 
 
 /*
- * in hashset, elements add on basis of hashcode, if hashcode is diff. then elem. is added in hashset4
+ * in hashset, elements add on basis of hashcode, if hashcode is diff. then elem. is added in hashset
  * 
  * in custom class -
  * by default, hashcode and equal will never be true
