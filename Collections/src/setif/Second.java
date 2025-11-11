@@ -11,7 +11,7 @@ import java.util.Set;
  * in custom class -
  * by default, hashcode and equal will never be true
  * in custom class hashcode is generated on basis of memory reff. (even 2 obj. are diff. but have same value, it still give diff hashcode)
- * so we need to override both methods in cyustom classes.
+ * so we need to override both methods in custom classes.
  * 
  * there are 2 cases (if hashcode is same) - 
  * 

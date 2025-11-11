@@ -6,7 +6,7 @@ import java.util.Set;
 public class First {
 
 /*
- * Set - 
+ * Set - cannot contain duplicate element
  * 
  * HashSet - 
  * - insertion order is not maintained
@@ -19,7 +19,7 @@ public class First {
  * Internal Working - 
  * - 1st it will check hashcode and then equalness by .equals()
  * - if hashcode is same then it will check .equals()
- * - if hashcode is diff. then it will not check .equals() 
+ * - if hashcode is diff. then it will not check .equals() directly add element
  * */
 	public static void main(String[] args) {
 		
