@@ -8,9 +8,9 @@ import java.util.TreeSet;
  * in custom classes - we must define how to compare them otherwise give classCastException
  * there are 2 ways to define custom sorting logic for obj. in custom class -
  * 1) Comparable<T> - Natural Ordering(one-way)
- * 2) Comparator<T> - Custom Ordering
+ * 2) Comparator<T> - Custom Ordering (use separate class)
  * 
- * 1)Comparable<T> - we can provide only one way for comparison(define logic on only one value)
+ * 1)Comparable<T> - we can provide only one way for comparison(define logic on only one value in same class)
  * */
 public class Treeset1 {
 
