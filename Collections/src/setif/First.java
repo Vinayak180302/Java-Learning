@@ -37,6 +37,15 @@ public class First {
 		set.add(null);
 		
 		System.out.println(set);
+		
+		Set<String> set1 = new HashSet<String>();
+		
+		set1.add("vinayak");
+		set1.add("akash");
+		set1.add("vinayak");
+		set1.add("shubham");
+		
+		System.out.println(set1);
 	
 	}
 

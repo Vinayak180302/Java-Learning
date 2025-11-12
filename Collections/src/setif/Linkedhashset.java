@@ -11,6 +11,7 @@ public class Linkedhashset {
  * - still random access is not possible
  *   - but we can access 1st & last elem. by creating reff. of child instead of polymorphic obj.
  * - initial cap. is 16 & load factor is 0.75
+ * - no duplicates allowed
  * 
  * 
  * - 
@@ -30,6 +31,15 @@ public class Linkedhashset {
 		
 		System.out.println(set.getFirst());    // access due to child class reff. instead of polymorphic obj.
 		System.out.println(set.getLast());
+		
+		Set<String> link = new LinkedHashSet<String>();
+		
+		link.add("vinayak");
+		link.add("akash");
+		link.add("vinayak");
+		link.add("shubham");
+		
+		System.out.println(link);
 		
 	}
 
