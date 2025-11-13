@@ -1,7 +1,18 @@
 package object;
 
+import java.util.Objects;
+
 public class Equal1
 {
+	
+	
+/*
+ * Steps to override .equals()-
+ * - check both reff. are same
+ * - check passing obj. is null 
+ * - check both obj. are of same class
+ * - then typecast the obj. and compare all imp. fields
+ **/
 
 public static void main(String[] args) {
 		
@@ -17,6 +28,8 @@ public static void main(String[] args) {
 		c2.name = "honda";
 		c2.price = 1111.00;
 		
+		System.out.println(c1.hashCode());
+		System.out.println(c2.hashCode());
 		System.out.println(c1.equals(c2));   //true
 		
 		
@@ -41,7 +54,7 @@ class car1{
 	double price;
 	
 	
-//	public boolean equals(Object obj) {
+//	public boolean equals(Object obj) {    //for same class
 //		
 //		car1 c2 = (car1) obj;
 //		
@@ -53,24 +66,22 @@ class car1{
 	
 	
 //optimised equal() for obj. of diff. classes
-	
-public boolean equals(Object obj) {   
-	
-//	if(obj.getClass() != this.getClass()) {
-//		return false;
-//	}
-	
-	//or
-	
-	if(!(obj instanceof car1))
-	{
-		return false;
+		
+	public boolean equals(Object obj) {
+		if(this == obj) return true;   // check reff. is same
+		if(obj == null) return false;  // check passed obj. is null
+		
+		if(this.getClass() != obj.getClass()) return false;   // check both obj. is of same class 
+		
+		car1 c1 = (car1)obj;    //typecast the obj.
+		
+		return this.id == c1.id && this.price == c1.price && this.name.equals(c1.name);  //compare all imp. fields	
 	}
-		car1 c2 = (car1) obj;
-		
-		return this.id == c2.id && this.price == c2.price && this.name.equals(c2.name);
-		
+
 	
+	//always override .hashCode() with .equals()
+	public int hashCode() {
+		return Objects.hash(id,name,price);
 	}
 }
 
