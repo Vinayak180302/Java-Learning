@@ -9,7 +9,7 @@ import java.util.Objects;
  * in this case, we override .hashcode & .equals in such way it will give same hashcode for 2 same keys and .equals true
  *  - if hashcode is same -> 
  *   - it will got to .equals, now it give true so it will consider key as same &override the value
- *   - but if only hashcode is same & .equals give false, it will not consider both keys same but -> 
+ *   - but if only hashcode is same & .equals give false, it will not consider both keys are same but -> 
  *      - for hashmap, now it is compulsion to place new  key-value pair in same hash-bucket cause hash-collision
  * */
 public class Hahmap2 {
