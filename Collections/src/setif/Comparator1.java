@@ -17,7 +17,7 @@ import java.util.TreeSet;
 public class Comparator1 {
 
 	public static void main(String[] args) {
-		Set<Car> tree = new TreeSet<Car>(new SpeedComparator());
+		Set<Car> tree = new TreeSet<Car>(new Name1Comparator());
 		
 		tree.add(new Car(105, "hundai"));
 		tree.add(new Car(101, "Honda"));
@@ -55,6 +55,17 @@ class SpeedComparator implements Comparator<Car> {
 		
 		return o2.speed - o1.speed;
 	}
+	
+}
+
+class Name1Comparator implements Comparator<Car>{
+
+	@Override
+	public int compare(Car o1, Car o2) {
+		
+		return o1.name.compareTo(o2.name);
+	}
+	
 	
 }
 
