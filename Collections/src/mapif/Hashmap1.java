@@ -6,6 +6,11 @@ import java.util.Map;
 /*
  * Methods in HashMap - 
  * 
+ * - hashCode() & .equals() in case of same key-
+ *  - if hashcode is same for two keys then -> 
+ *    - it will check the .equals(), if equals gives true then it will override the value 
+ *    - if .equals() give false, but hashcode is same then it is compulsion to hashmap to place key-value pair in same hash-bucket causing hahsh-collision
+ * 
  * */
 public class Hashmap1 {
 
@@ -29,7 +34,9 @@ public class Hashmap1 {
 		System.out.println(map);
 		map.putIfAbsent(6, "VWX");     //update value because value is null
 		map.putIfAbsent(5, "YZ");      //not update because value are there already
-		System.out.println(map);
+		
+		map.put(5, "abc");
+		System.out.println(map);    //here hashcode for key is same as well as equals() true, then it will ovverride the value		
 		
 		
 	}
