@@ -12,6 +12,8 @@ import java.util.Map;
  * - Insertion order is not maintained
  * - Hashtable work with Enumeration
  * 
+ * - internally checks .hashCode() & .equals() same as HashMap
+ * 
  * */
 
 public class HashTable {
@@ -26,6 +28,12 @@ public class HashTable {
 //		map.put(null, "jkl");        //gives NullPointerException
 //		map.put(4, null);
 //		map.put(null, null);
+		map.put(3, "lmn");
+		
+		map.putIfAbsent(3, "pqr");   //only if key is not present, if key is not present
+		
+		
+		System.out.println(map.getOrDefault(5, "xyz"));  //returns a value of specified key is mapped or if not mapped give default values we pass, but not modified in original hashtable
 		
 		
 		System.out.println(map);
