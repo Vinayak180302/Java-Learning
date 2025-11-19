@@ -14,6 +14,8 @@ import java.util.Map;
  * 
  * - internally checks .hashCode() & .equals() same as HashMap
  * 
+ * 
+ * 
  * */
 
 public class HashTable {
@@ -28,7 +30,7 @@ public class HashTable {
 //		map.put(null, "jkl");        //gives NullPointerException
 //		map.put(4, null);
 //		map.put(null, null);
-		map.put(3, "lmn");
+		map.put(3, "lmn");        //if key is present in hashtable, then it will override it with new value
 		
 		map.putIfAbsent(3, "pqr");   //only if key is not present, if key is not present
 		
