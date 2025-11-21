@@ -4,6 +4,27 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
+/*
+ * Entry<K,V> - 
+ * - inner interface inside Map interface 
+ * - Entry<K,V> basically is single records in Map
+ * - used to iterate through HashMap, LinkedHashMap, TreeMap
+ * - Not used with HashTable (use Enumeration for iteration in HashTable)
+ * 
+ * - Methods in Map  - 
+ * 
+ *  - entrySet() - returns A Set of Map.Entry objects, where each Entry contains both key and value.
+ * 
+ *  - KeySet() - returns set of keys (gives set because keys are unique so to store it it uses set)
+ *  
+ *  - Values() - returns collection of values (because values can be duplicate)
+ *  
+ * - Methods in Map.Entry<> - 
+ *  
+ *  - getKey() - returns key
+ *  
+ *  - getValue() - returns value
+ * */
 public class Entry1 {
 
 	public static void main(String[] args) {
