@@ -38,7 +38,7 @@ public class First {
 		System.out.println(pred.negate().test(15));
 		
 		Predicate<Integer> pred3 = pred.and(pred2);
-		System.out.println(pred3.test(-1));
+		System.out.println(pred3.test(12));
 		
 		Predicate<Integer> pred4 = pred.or(pred2);
 		System.out.println(pred4.test(15));
