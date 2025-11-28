@@ -20,8 +20,10 @@ List<Integer> list = new ArrayList<Integer>();
 		Iterator<Integer> itr = list.iterator();
 		
 		while(itr.hasNext()) { 
-			itr.remove();
+			
 			System.out.println(itr.next());
+			itr.remove();
+		
 			
 		}
 

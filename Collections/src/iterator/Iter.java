@@ -23,7 +23,7 @@ public class Iter {
 		}
 		
 		
-//		System.out.println(list);
+		System.out.println(list);
 
 		Iterator<Integer> itr = list.iterator();
 		
