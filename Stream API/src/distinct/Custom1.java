@@ -3,7 +3,10 @@ package distinct;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-
+/*
+ * in custom class .hashcode() & .equals() are by-default false 
+ * so we need to override both method in such way it show hashcode & equality on the basis on values
+ */
 public class Custom1 {
 
 	public static void main(String[] args) {
