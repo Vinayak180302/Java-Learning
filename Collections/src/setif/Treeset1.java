@@ -1,5 +1,6 @@
 package setif;
 
+import java.util.Comparator;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -53,5 +54,15 @@ class Student1 implements Comparable<Student1>{
 		return "id = " + id + "name = "+ name ;
 	}
 	
+	
+}
+
+class Idcomparator implements Comparator<Student1>{
+
+	@Override
+	public int compare(Student1 o1, Student1 o2) {
+		// TODO Auto-generated method stub
+		return Integer.compare(o1.id, o2.id);
+	}
 	
 }

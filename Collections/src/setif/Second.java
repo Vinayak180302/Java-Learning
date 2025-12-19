@@ -34,6 +34,8 @@ public class Second {
 		
 		Set<Student> set = new HashSet<Student>();
 		
+	
+		
 		set.add(s);
 		set.add(s2);
 		set.add(s3);

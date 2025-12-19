@@ -11,7 +11,7 @@ public class Comparator2 {
  * */
 	public static void main(String[] args) {
 		
-		Set<Student2> tree  = new TreeSet<Student2>(new MarksComparator());
+		Set<Student2> tree  = new TreeSet<Student2>();
 		tree.add(new Student2(5, "Vinayak", 45.1));
 		tree.add(new Student2(1, "Akash", 21.12));
 		tree.add(new Student2(6, "Om", 87.24));

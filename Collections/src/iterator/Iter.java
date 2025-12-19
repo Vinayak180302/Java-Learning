@@ -3,6 +3,7 @@ package iterator;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 
 /*
@@ -25,7 +26,7 @@ public class Iter {
 		
 		System.out.println(list);
 
-		Iterator<Integer> itr = list.iterator();
+		ListIterator<Integer> itr = list.listIterator();
 		
 		while(itr.hasNext()) { 
 			

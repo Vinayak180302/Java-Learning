@@ -17,7 +17,7 @@ import java.util.TreeSet;
 public class Comparator1 {
 
 	public static void main(String[] args) {
-		Set<Car> tree = new TreeSet<Car>(new Name1Comparator());
+		Set<Car> tree = new TreeSet<Car>(new SpeedComparator());
 		
 		tree.add(new Car(105, "hundai"));
 		tree.add(new Car(101, "Honda"));

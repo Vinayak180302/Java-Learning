@@ -1,5 +1,6 @@
 package queueif;
 
+import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
@@ -20,7 +21,7 @@ public class Priority1 {
 
 	public static void main(String[] args) {
 		
-		Queue<Integer> q1 = new PriorityQueue<Integer>();
+		Queue<Integer> q1 = new LinkedList<Integer>();
 		
 		q1.add(1);
 		q1.add(5);
@@ -30,16 +31,25 @@ public class Priority1 {
 		q1.add(15);
 		q1.add(45);
 		
-		System.out.println(q1);
-		System.out.println(q1.remove());
-		System.out.println(q1);
-		System.out.println(q1.remove());
-		System.out.println(q1);
+//		System.out.println(q1);
+//		System.out.println(q1.remove());
+//		System.out.println(q1);
+//		System.out.println(q1.remove());
+//		System.out.println(q1);
+//		System.out.println(q1.peek());
+//		System.out.println(q1);
 		
 		PriorityQueue<Integer> q2 = new PriorityQueue<Integer>(2);
 		q2.add(1);
 		q2.add(5);
 		q2.add(4);
+		q2.add(6);
+		q2.add(3);
+		q2.add(12);
+		System.out.println(q2);
+		System.out.println(q2.poll());
+		System.out.println(q2);
+		System.out.println(q2.remove());
 		System.out.println(q2);
 	}
 
