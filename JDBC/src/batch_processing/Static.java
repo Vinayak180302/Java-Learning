@@ -15,7 +15,8 @@ import java.sql.Statement;
 public class Static {
 
 /*
- * For Static queries - 
+ * For Static queries -
+ *  - we used Statement interface 
  * 
  * */
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
