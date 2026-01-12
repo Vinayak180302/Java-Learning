@@ -24,7 +24,7 @@ Scanner sc = new Scanner(System.in);
 		
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc", "root", "Vinayak18@");
 		
-		PreparedStatement ptmt = con.prepareStatement("insert into student values(?, ?)");
+		PreparedStatement ptmt = con.prepareStatement("insert into stud values(?, ?)");
 		
 				
 		ptmt.setInt(1, id);
