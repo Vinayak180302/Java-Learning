@@ -8,8 +8,8 @@ public class Arraylist {
  * ArrayList - 
  * - internally use dynamic array
  * - it maintain insertion order
- * - useful for random access of element(due to undex based) has O(1) constant time complexity
- * - not useful for insertion and deletion of elem. beacause internal shifting of indices - O(1) linear time complexity
+ * - useful for random access of element(due to index based) has O(1) constant time complexity
+ * - not useful for insertion and deletion of elem. beacause internal shifting of indices - O(n) linear time complexity
  * - initial cap. is 10
  * - allow duplicates and multiple null values
  * */
