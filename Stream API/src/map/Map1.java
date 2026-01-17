@@ -2,11 +2,12 @@ package map;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 
 /*
  * map() - 
- * - is uesd to convert data from one type to another     
- * - it accepts lamda of function (func. interface)
+ * - is used to convert data from one type to another     
+ * - it accepts lambda of function (func. interface)
  * - 
  * */
 public class Map1 {
@@ -48,8 +49,17 @@ public class Map1 {
 		list2.add(3);
 		list2.add(9);
 		
-		list2.stream().map((i)->{return Double.valueOf(i);}).forEach((i)->{System.out.println(i);});
+		list2.stream().map(new Convert()).forEach((i)->{System.out.println(i);});
 
 	}
 
+}
+
+class Convert implements Function<Integer, Double>{
+
+	@Override
+	public Double apply(Integer t) {
+		return Double.valueOf(t * 2);
+	}
+	
 }

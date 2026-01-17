@@ -41,5 +41,12 @@ public class Second {
 		
 		System.out.println(fun6.apply("34561"));
 	}
+	
+	
+	
+	
+	
+	
+	
 
 }

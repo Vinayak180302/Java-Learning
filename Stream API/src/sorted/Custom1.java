@@ -21,7 +21,7 @@ public class Custom1 {
 		li.add(new Student(4, "shubham"));
 		li.add(new Student(3, "raj"));
 		
-		li.stream().sorted(new IdComparator()).forEach((i)->{System.out.println(i);});
+		li.stream().sorted().forEach((i)->{System.out.println(i);});
 
 
 	}
@@ -46,7 +46,7 @@ class Student implements Comparable<Student>{
 	@Override
 	public int compareTo(Student o) {
 		
-		return Integer.compare(this.id, o.id);
+		return Integer.compare(o.id,this.id);
 	}
 }
 

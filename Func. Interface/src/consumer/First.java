@@ -20,8 +20,12 @@ public class First {
 		Consumer<Integer> cons1 = (j)->{System.out.println(j * 10);};
 		cons1.accept(12);
 		
-		Consumer<Double> cons2 = (k)->{System.out.println( k * 20);};
-		cons2.accept(10.0);
+		Consumer<Integer> cons2 = (k)->{System.out.println( k * 20);};
+		cons2.accept(10);
+		
+		Consumer<Integer> con5 = cons1.andThen(cons2);
+		
+		con5.accept(50);
 	}
 
 }

@@ -2,6 +2,7 @@ package filter;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class Filter3 {
 
@@ -49,9 +50,19 @@ public class Filter3 {
 		//print no. between 10 & 50
 		
 		List<Integer> li7 = List.of(5, 12, 45, 60, 22);
-		li7.stream().filter((i)->{return i > 10 && i < 50;}).forEach((i)->{System.out.println(i);});
+		li7.stream().filter(new Greater())
+		.forEach((i)->{System.out.println(i);});
 		
 
 	}
 
+}
+
+class Greater implements Predicate<Integer>{
+
+	@Override
+	public boolean test(Integer i) {
+		return i > 10 && i < 50;
+	}
+	
 }
